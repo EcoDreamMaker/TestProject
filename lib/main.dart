@@ -1,30 +1,16 @@
 import 'package:flutter/material.dart';
+import 'Pages/home.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-      home: MyAppBar(),
-    ),
-  );
+  runApp(MyApp());
 }
 
-class MyAppBar extends StatelessWidget {
-  const MyAppBar({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: const IconButton(
-          onPressed: null,
-          icon: Icon(Icons.menu),
-          tooltip: 'Navigation menu'
-        ),
-        
-      ),
-      body: const Center(
-        child: Text('Hello, Deepam'),
-      ),
+    return const MaterialApp(
+      home: MyAppBar(),
+      
     );
   }
 }
